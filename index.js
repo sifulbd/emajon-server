@@ -64,6 +64,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.listen(port, () => {
+app.listen(process.env.port || port, () => {
   console.log(`App is listening...`)
 })
