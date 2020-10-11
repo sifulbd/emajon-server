@@ -23,7 +23,7 @@ client.connect(err => {
         productsCollection.insertMany(products)
         .then(result => {          
           console.log(result)            
-        })
+        }) 
     })
 
     app.get('/products', (req, res) => {
@@ -33,7 +33,7 @@ client.connect(err => {
       })
     })
     app.get('/', (req, res) => {
-      res.send('Hello World!')
+      res.send('Hello World!!!')
     })
 
     app.get('/product/:key', (req, res) => {
